@@ -14,7 +14,7 @@ public class followtarget : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-   
+        currentWaypointIndex = Random.Range(0, waypoints.Length);
     }
 
     private void Update()
